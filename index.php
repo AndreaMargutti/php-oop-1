@@ -28,6 +28,7 @@ class Movie {
     }
 }
 
+// ! Instazion i singoli film
 $avengers = new Movie("Avengers", "direttore-1", "Action", 4);
 $split = new Movie("Split", "direttore-2", "Horror", 10);
 $beeKeeper = new Movie("The BeeKeeper", "direttore-3", "Action", 5)
@@ -48,6 +49,7 @@ $beeKeeper = new Movie("The BeeKeeper", "direttore-3", "Action", 5)
 <body>
     <main class="container text-center">
         <h1 class="py-3">PHP8 - Obj - Movies</h1>
+        <!--Stampo in pagina i film con le varie informazioni precedentemente assegnate-->
         <div class="mb-3">
             <?= $avengers->title ?>
             <?= $avengers->director ?>
