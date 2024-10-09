@@ -17,6 +17,8 @@ class Movie {
     }
 }
 
+$avengers = new Movie("Avengers", "direttore1", "action", 7);
+$split = new Movie("Split", "direttore2", "horror", 10);
 ?>
 
 <!DOCTYPE html>
@@ -30,9 +32,18 @@ class Movie {
 
 <body>
     <main>
-        <?php
-        
-        ?>
+        <pre>
+            <?= $avengers->title ?>
+            <?= $avengers->director ?>
+            <?= $avengers->genre ?>
+            <?= $avengers->vote ?>
+        </pre>
+        <pre>
+            <?= $split->title ?>
+            <?= $split->director ?>
+            <?= $split->genre ?>
+            <?= $split->vote ?>
+        </pre>
     </main>
 </body>
 
