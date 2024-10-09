@@ -2,16 +2,18 @@
 //definisco la classe
 class Movie {
     // # Dichiaro le variabili di istanza
-    public $title;
-    public $director;
-    public $genre;
+    public string $title;
+    public string $director;
+    public string $genre;
+    public int $vote;
 
     // # Dichiaro un costruttore per le variabili di istanza
-    public function __construct($title, $director, $genre)
+    public function __construct($title, $director, $genre, $vote)
     {
         $this->title = $title;
         $this->director = $director;
         $this->genre = $genre;
+        $this->vote = $vote;
     }
 }
 
@@ -27,7 +29,11 @@ class Movie {
 </head>
 
 <body>
-
+    <main>
+        <?php
+        
+        ?>
+    </main>
 </body>
 
 </html>
