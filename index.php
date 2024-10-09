@@ -28,8 +28,9 @@ class Movie {
     }
 }
 
-$avengers = new Movie("Avengers", "direttore1", "action", 4);
-$split = new Movie("Split", "direttore2", "horror", 10);
+$avengers = new Movie("Avengers", "direttore-1", "Action", 4);
+$split = new Movie("Split", "direttore-2", "Horror", 10);
+$beeKeeper = new Movie("The BeeKeeper", "direttore-3", "Action", 5)
 ?>
 
 <!DOCTYPE html>
@@ -58,6 +59,12 @@ $split = new Movie("Split", "direttore2", "horror", 10);
             <?= $split->director ?>
             <?= $split->genre ?>
             <?= $split->getVoteMessage($split->vote) ?>
+        </div>
+        <div class="mb-3">
+            <?= $split->title ?>
+            <?= $split->director ?>
+            <?= $split->genre ?>
+            <?= $beeKeeper->getVoteMessage($beeKeeper->vote) ?>
         </div>
     </main>
 </body>
